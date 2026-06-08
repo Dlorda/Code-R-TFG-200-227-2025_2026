@@ -299,8 +299,9 @@ save_all_MR_results_to_excel <- function(filename_prefix = paste0("MR_results", 
   message("Resultados guardados en: ", normalizePath(final_name))
 }
 
+#Ejecutar el comando personalizado
 save_all_MR_results_to_excel()
-if (interactive()) browseURL(getwd())
+#if (interactive()) browseURL(getwd()) #Para abrir la carpeta del documento
 
 #####
 # Análisis de sensibilidad
@@ -682,7 +683,7 @@ save_sensitivity_results <- function(filename_prefix = paste0("Sensitivity_resul
 
 #Ejecutar el comando personalizado
 save_sensitivity_results()
-if (interactive()) browseURL(getwd())
+#if (interactive()) browseURL(getwd()) #Para abrir la carpeta del documento
 
 # ###
 # # ---------------
